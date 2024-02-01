@@ -1,0 +1,285 @@
+/*IMPORTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap');
+
+/*HEADER NAV*/
+
+html{
+	scroll-behavior: smooth;
+}
+
+#header{
+	position: fixed;
+	width: 100%;
+	font-family:Outfit;
+	background-color:white;
+	height:8vh;
+	z-index: 99;
+	box-shadow: 0px 2px .5vw #0A0F25;;
+}
+#header h1{
+	position: absolute;
+	text-align:left;
+	font-size:4vh;
+	color: #0A0F25;
+	display:inline-block;
+	height: 100%;
+	top: 10%;
+	padding:0px;
+	margin:1vh;
+}
+#header nav{
+	display: inline-block;
+	position: fixed;
+	width:100%;
+	font-family:Outfit;
+	font-weight: 900;
+	font-size: 2vh;
+	z-index: 98;
+	text-align: right;
+}
+nav li{
+	display:inline-grid;
+	list-style:none;
+	padding:2vh;
+	padding-top:1vh;
+	text-decoration:none;
+	color: #0A0F25;
+	transition: all .1s;
+	font-size: 120%;
+	text-decoration:underline white solid 3px;
+	cursor:pointer;
+}
+nav li:hover{
+	text-decoration:underline #0A0F25 solid 3px;
+}
+
+/*BODY*/
+
+#content{
+	overflow:hidden;
+	padding-top: 5vw;
+}
+body{
+	font-family:Outfit;
+	font-size:1vw;
+	color:black;
+	margin: 0px;
+}
+h1{
+	color: #0A0F25;
+	text-align: center;
+	font-size: 8vw;
+	padding: 0px;
+	padding-top: 100px;
+	margin: 0px;
+	z-index: 50;
+}
+h2{
+	color: #0A0F25;
+	text-align: center;
+	font-size: 400%;
+	font-weight: 400;
+	padding: 0px;
+	margin: 0px;
+}
+img{
+	display:block;
+	width:20vw;
+	height:auto;
+	border-radius:.5vw;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+p{
+	display:block;
+	text-align:center;
+	width:70%;
+	font-size:3em;
+	margin-left:auto;
+	margin-right:auto;
+}
+.squigglyBlue{
+	z-index:1;
+	width:100%;
+	border-radius:0px;
+	color:#0A0F25 ;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.sqTop{
+	margin-top:-5vw;
+	margin-bottom:2vw;
+	z-index:50;
+}
+.sqBottom{
+	margin-top:2vw;
+	margin-bottom:-15vw;
+	rotate:180deg;
+}
+.middleSquigglyBlue{
+	z-index:90;
+	background-color:#0A0F25;
+	color:white;
+	margin-top:-3vw;
+	margin-bottom:-3vw;
+	padding-top:1vw;
+	padding-bottom:1vw;
+}
+.middleSquigglyBlue p{
+	z-index:90;
+	width:70%;
+}
+.middleSquigglyBlue h1, .middleSquigglyBlue h2{
+	color:white;
+}
+hr{
+	width:80%;
+	margin:5vw;
+	margin-left:auto;
+	margin-right:auto;
+	color:#0A0F25;
+}
+.projHeader{
+	font-weight:bold;
+	font-size:5vw;
+}
+.launchButton{
+	font-size:3vw;
+	width:11vw;
+	height:4vw;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	display:block;
+	text-decoration:none;
+	color:white;
+	background-color:green;
+	line-height:4vw;
+	border-radius:.5vw;
+	transition:all .2s;
+}
+.launchButton:hover{
+	background-color:rgb(0, 158, 0);
+}
+#draftedImg{
+	width:60%;
+}
+#socials{
+	text-align:center;
+	
+}
+#socials a{
+	margin:1vw;
+	background-color: #0A0F25;
+	border-radius:100%;
+	width:5vw;
+	height:5vw;
+	text-decoration:none;
+	color:white;
+	line-height:5vw;
+	transition:all .2s;
+	z-index:99;
+	position: relative;
+	margin-top:3vw;
+	margin-bottom:-3vw;
+}
+#socials a:visited{
+	color:white;
+}
+#socials a:hover{
+	background-color: #121b3f;
+}
+.middleSquigglyBlue h3{
+	text-align:center;
+}
+#jumpToTop{
+	margin-bottom:5vw;
+	text-decoration:none;
+	cursor:pointer;
+}
+#jumpToTop:hover{
+	text-decoration:underline;
+}
+.emailInsert{
+	color:inherit;
+}
+.emailInsert:hover{
+	font-style:italic;
+}
+.certsList a{
+	pointer-events:none;
+	display:block;
+	text-align:center;
+	text-decoration:none;
+	color:white;
+	margin-top:20px;
+	font-size:2vw;
+	transition:all .2s;
+	text-decoration:underline #0A0F25;
+	z-index:99;
+}
+.certsList a:hover{
+	text-decoration:underline white;
+}
+.certsList a span{
+	pointer-events:auto;
+}
+#certs{
+	margin-top:-3vw;
+}
+
+/* COMPAT */
+
+@media screen and (max-width: 1024px) {
+	#header h1{
+		display:none;
+	}
+	#header nav ul{
+		white-space:nowrap;
+		width:100%;
+		padding:0px;
+		text-align:center;
+	}
+	#header nav li{
+		display: inline-block !important;
+		width:auto !important;
+		white-space:nowrap;
+		max-width:100%;
+		flex: 0 0 auto;
+		font-size:3vw;
+		max-height:0.5vw;
+	}
+	.certsList a{
+		font-size:3vw;
+	}
+	#tfv, #jumpToTop{
+		font-size:3vw;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	#header h1{
+		display:none;
+	}
+	#header nav ul{
+		white-space:nowrap;
+		width:100%;
+		padding:0px;
+		text-align:center;
+	}
+	#header nav li{
+		display: inline-block !important;
+		width:auto !important;
+		white-space:nowrap;
+		max-width:100%;
+		flex: 0 0 auto;
+		font-size:3.75vw;
+		max-height:0.5vw;
+	}
+}
